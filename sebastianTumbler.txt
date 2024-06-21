@@ -1,0 +1,125 @@
+google sir-tumbalot
+tube rotator
+
+https://www.printables.com/model/394283-sir-tumbalot-v2-magnetic-deluxe
+
+
+real docs at https://www.printables.com/model/394283-sir-tumbalot-v2-magnetic-deluxe
+article at: 
+
+Parts List:l.
+
+Pancake St                             cd4er cd4fe  c`        + 
+stepper Motor:
+
+https://a.co/d/cKmp9Y5
+
+Magnets 12x6x3mm (need 16 of these):
+https://www.amazon.com/gp/product/B09L47HV7M/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+
+5mm Rods (you need 3): https://www.amazon.com/gp/product/B00UCR6VOK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+5mm Bearing: 
+https://www.amazon.com/gp/product/B071RXC7FV/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+5mm Shaft Coupler:
+https://www.amazon.com/dp/B0BP87Q4PC/ref=cm_sw_r_apanp_jQ36YUpTExQSn
+
+
+Flange Coupling Connector:
+https://www.amazon.com/gp/product/B08334MFVT/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+Trinamic TMC2209 Stealth Chop Dev Board:
+https://www.mouser.com/ProductDetail/Trinamic/TMC2209-BOB?qs=TiOZkKH1s2Qe%2F0oCs8WMDg%3D%3D
+
+Crimp on pin headers (DuPont Connector)
+
+https://a.co/d/7HGjm6S
+
+Female Pin header Kit
+
+https://a.co/d/0HIC8a4
+
+Rubber feet
+
+https://a.co/d/ahQm9Wy
+
+ 
+
+Specific Tube Links:
+
+50mL Fully Autoclavable Snap-cap Tubes
+https://www.amazon.com/CELLTREAT-229498-50Ml-Centrifuge-Snap-Pop/
+
+2mL Round Bottom Tubes
+https://www.amazon.com/gp/product/B00E91WUJK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+ power transmission https://www.aliexpress.com/item/4001174456939.html?spm=a2g0o.detail.pcDetailBottomMoreOtherSeller.1.7828145dSQrD8G&gps-id=pcDetailBottomMoreOtherSeller&scm=1007.40000.326746.0&scm_id=1007.40000.326746.0&scm-url=1007.40000.326746.0&pvid=dcf6c80f-085d-4c95-9b66-96b78eae7b28&_t=gps-id:pcDetailBottomMoreOtherSeller,scm-url:1007.40000.326746.0,pvid:dcf6c80f-085d-4c95-9b66-96b78eae7b28,tpp_buckets:668%232846%238111%23430&pdp_npi=4%40dis%21CAD%214.93%213.94%21%21%213.53%212.82%21%402101e64117142330793817155ead36%2110000015041752139%21rec%21CA%21132308507%21&utparam-url=scene%3ApcDetailBottomMoreOtherSeller%7Cquery_from%3A
+ 
+ and https://www.aliexpress.com/item/1005006894869348.html?spm=a2g0o.productlist.main.11.3d3f81119Fsvg1&algo_pvid=3ce581a0-c830-445f-8cf7-9630c1d9aa01&algo_exp_id=3ce581a0-c830-445f-8cf7-9630c1d9aa01-5&pdp_npi=4%40dis%21CAD%216.43%214.50%21%21%214.60%213.22%21%402103011017142417090201060ebe51%2112000038643131500%21sea%21CA%21132308507%21&curPageLogUid=DJzVqwCr7zXT&utparam-url=scene%3Asearch%7Cquery_from%3A ORDERED
+
+Misc:
+
+Arduino UNO from various suppliers.
+
+9v power wall-wart from various suppliers for arduino uno boards.
+
+M3 x 30mm screws
+
+22 guage stranded core wire
+
+Metric allen wrench set
+
+Needle-nose pliers
+
+ 
+
+Instructions:
+
+ 
+
+Download and install the TMCStepper Arduino library, linked here: https://github.com/teemuatlut/TMCStepper
+Print all the included parts and/or modify the parts in TinkerCAD as linked above.
+Print 8 matching tube adaptors or design your own to fit that magnetic slot dimension. If you are going to print my tube holder design, print just one holder first and do a test fit, if your specific tube is smaller or larger, try editing the tube holder file in TinkerCAD or your CAD editor of choice. If you're using TinkerCAD, you can use the “ungroup” function to gain dimensional access to just the cylindrical portion of the tube holder and modify that dimension specifically.
+Install 12x6x3mm magnets in the rotor, keeping identical polarities facing upward across all 8 magnet slots. Use black silicone sealant to adhere the magnets if friction fit is not enough.
+Install similar magnets to each of the tube adapters, check the polarity such that each tube adaptor is attracted to the rotor slot magnets. Only test magnetic pull once rotor magnet sealant is cured to avoid ripping magnets out of their slots. Ensure the tube adapter magnets are flush with the flat rectangular surface. Connect all tube adaptors to the rotor to check polarities and ensure all tube adapters mate in the same direction.
+Strip 4mm off each of the wires attached to the stepper motor.
+Crimp on male DuPont connector to each wire and slide on black plastic DuPont connector sheath.
+Solder female pin header rows to the Stealth Chop Dev Board.
+Slide the stepper motor wires through the printed stepper housing.
+Connect the stepper wires to the Dev Board as follows: A1: Black, A2: Green, B1: Red, B2: Blue
+Connect the Vio pin to Arduino 3v
+Connect the Vmot pin to Arduino 5v
+Connect the DIR, STEP and ENABLE pins on the Stealth Chop Dev Board to Arduino pins 4, 5, and 6 respectively.
+Connect GNDmot and GNDio grounds to Arduino GND pins.
+Connect the motor shaft to the 5mm rod via the shaft coupler. Ensure the shafts meet in the middle of the coupler and tighten.
+Slot the 5mm bearing into the printed bearing housing.
+Slot the bottom 5mm rods to the housing feet and push everything together, aligning the 5mm motor rod into the 5mm bearing bore.
+Upload the included code to the Arduino, the motor should begin rotating. If it makes a stall noise just give the motor rod a manual twist in the direction of rotation to overcome initial friction. Take note of any wobble or eccentricities. If there is wobble, cut power to the Arduino and adjust the shaft coupling since that is the central source of wobble. There will always be a bit of wobble due to shaft manufacturing defects.
+Attach the two flange couplers to the rotor and fasten with M3x30mm screws. Be mindful of the tiny worm screws in the flange as they may get lost.
+Disassemble the bearing housing from the 5mm rods and slide the rotor onto the 5mm motor shaft, center it, reattach the bearing housing to all the rods. Once rotor is centered, screw in the worm screws to secure the rotor to the motor shaft.
+Ensure everything is pushed together firmly. Apply rubber feet to the bottom of each printed housing. Turn on the Arduino and see if it spins. Remember if it stalls just give it a twist to help it start.
+
+
+MINE:
+Sebi 50 ml tubes 115x30 cm
+mine https://www.aliexpress.com/item/1005006347439712.html?spm=a2g0o.order_list.order_list_main.81.344e1802VMgNMz
+103x27 so a tad smaller but still 50 ml
+
+https://www.tinkercad.com/things/i6Qn8FpEDVa-copy-of-sir-tumbalot-v3-magnetic-deluxe/edit
+
+so min wall to wall 106 + 1 cm on each side->12.5 cm
+my magnets 4.6 cubes
+angle is 45
+
+lemonade width 16.5 cm
+
+Tumbalot Sebastian with instructions
+https://www.printables.com/model/394283-sir-tumbalot-v2-magnetic-deluxe
+
+
+foam tube stoppers beer making https://www.amazon	.com/Pieces-Stopper-Plastic-Openings-Starter/dp/B091HTNF72 polyurethane 
+https://www.amazon.ca/Flaschenverschluss-%C3%96ffnungen-R%C3%B6hrchen-Flaschen-Herstellung/dp/B091HTNF72/ref=sr_1_fkmr0_2?crid=1NCHLLXMT3OVC&dib=eyJ2IjoiMSJ9.vuX0r1c32kcFCtQ4287qHWGUyKeiKSrJCNDUrCzNFwc.MeFLW1tFl59JHVZYYgqWBqmqO9HUFyHLOjjGDjVFq50&dib_tag=se&keywords=20+Pieces+Foam+Stopper+Plastic+Foam+Plug&qid=1717613695&sprefix=20+pieces+foam+stopper+plastic+foam+plug+%2Caps%2C549&sr=8-2-fkmr0
+https://www.digikey.ca/en/products/detail/aearo-technologies-llc,-a-3m-company/CF-40EG%25201.0%2520DISK%2520PAD/7066942?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Product_Medium%20ROAS%20Categories&utm_term=&productid=7066942&utm_content=&utm_id=go_cmp-20291741266_adg-_ad-__dev-c_ext-_prd-7066942_sig-CjwKCAjwmYCzBhA6EiwAxFwfgFhS0viZxLjbD4YAvAt-xy9-T_ioZ5W-uyIZSJIVPVikIvvRscdYDxoCXA4QAvD_BwE&gad_source=1&gclid=CjwKCAjwmYCzBhA6EiwAxFwfgFhS0viZxLjbD4YAvAt-xy9-T_ioZ5W-uyIZSJIVPVikIvvRscdYDxoCXA4QAvD_BwE
+see also orbital shaker/corks for corks
