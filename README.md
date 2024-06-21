@@ -47,5 +47,7 @@ No soldering required.
 At this point you can set the target RPM and target temperature using the serial port. Use CoolTerm (Free program) to connect to the serial port and type ? to see possible commands. At this point you can start stop the rotation, set the rotation speed and set the temperature. 
 Sometimes on higher load depending on what motor you are using it migh not start until you give it a push with your finger. That is not necessary for me if I fully load the wheel with 50% filled tubes. Normally you will not fill the tubes more than 20%
 
+One simple way to accommodate smaller tubes is to put them in the 50 mm tubes with something to block them for moving (I use pieces of sponges)
+
 Normally you get a faster delivery, better support on Amazon. All the links are just example and I encourage you to find beter one with better reviews, delivery, quality etc.
 I built this as a quiter alternative to the orbital shaker for making many glycerol stocks at the same time.
