@@ -1,5 +1,5 @@
 # tubeRotator
-A classic tube rotator to be used for what you desire to.
+A classic tube rotator to be used for what you desire to. In a pinch it could be used as a mini bioreactor.
 Software is https://github.com/AdrianMolecule/OrbitalShakerMksBoard. Sorry for 2 repos but it seems to be the only way to do it decently in gitHub.
 Normally can rotate 8 50 ml tubes and about 16 2 ml or 1.5 ml tubes in the same time from 0 to maybe 300 RPM before things start flying.
 
@@ -41,13 +41,18 @@ That is all for the rotator only part.
 If you want the heater incubator part too:
 You need need the power board a temperature sensor and a silicone heating pad of 12 or 24 volts. You will need to futher insulate the box in case you'll find that it takes too long to reach the desired temperature- usually 37 Celsius. You power the heat pad directly from the spindle (2 screws). I limited the max power to about 90%. It's important to put some metal holder under the heater otherwise it might melt the box. I used some tin leftovers fro some fascia cover but you can use a tin can. Careful when cutting it- use thick gloves.
 
-No soldering required.
-**If you want to optimize the torque for the Nema moter google it on youTube. When using a noisier  DRV8825 driver => https://www.youtube.com/watch?v=Vp9ZRCEhVYc but it could be different if you get the quiet driver so add the name of your driver to the google search. I use the DRV8825 without noise issues.
+No soldering should be required but 2 resistors need to be connected somehow, one is series with the piezo buzzer and one between + and signal pin on the temperature sensor. Their leads can be just spiralled around their connexion and electrical tape can be used for isolation. I did solder them and used shrink wrap for insulation but it's not necessary. As a matter of facts the buzzer itself could be considered optional.
+
+**If you want to optimize the torque for the Nema motor, Google it on youTube. When using a noisier driver like DRV8825  watch=> https://www.youtube.com/watch?v=Vp9ZRCEhVYc . That could be different if you get the quiet driver so add the name of your driver to the Google search. I used the DRV8825 without noise issues.
 
 At this point you can set the target RPM and target temperature using the serial port. Use CoolTerm (Free program) to connect to the serial port and type ? to see possible commands. At this point you can start stop the rotation, set the rotation speed and set the temperature. 
-Sometimes on higher load depending on what motor you are using it migh not start until you give it a push with your finger. That is not necessary for me if I fully load the wheel with 50% filled tubes. Normally you will not fill the tubes more than 20%
+Sometimes on higher load depending on what motor you are using it migh not start until you give it a push with your finger. That is not necessary for me if I fully load the wheel with 50% filled tubes. Normally you will not fill the tubes more than 20% to have enough Oxygen but for other tasks that might not happen.
 
 One simple way to accommodate smaller tubes is to put them in the 50 mm tubes with something to block them for moving (I use pieces of sponges)
 
 Normally you get a faster delivery, better support on Amazon. All the links are just example and I encourage you to find beter one with better reviews, delivery, quality etc.
-I built this as a quiter alternative to the orbital shaker for making many glycerol stocks at the same time.
+I built this as a quiter alternative to the orbital shaker. That's for making many glycerol stocks at the same time but it could be used for incubation or even as mini-bioreactor.
+
+As with all projects, we looked at many existing devices and while we did not really copy anything from any of them there are natural similarities given the task. 
+
+Special thank to Sebastian Cocioba who had published a similar device in OS. His designs are always true and his work is fantastic.
