@@ -59,3 +59,6 @@ Special thank to Sebastian Cocioba who had published a similar device in OS. His
 Update: the .stl files and the previous fusion360 show the model in the pictures that has been in use for a year or longer.
 
 I just uploaded a new much slimmer model that also supports both screws or 5 mm cube magnets. As for the previous model you need at least 16 but better use 32 that gives you 8 large holders. I did not add yet the .stl files and  I'll do that on request sent to openbioscience.com. This new model does not add new functionality but it's just much shorter to print.
+
+
+I discovered that a short shaft that is only supported on the motor side is enough for rotation as long as the rotor is pushed closed to the motor. Sou don't need to print the orther end shaft support.
